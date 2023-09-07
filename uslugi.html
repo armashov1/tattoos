@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Armashov Tattoo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img class="logo" src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ДОМ</a></li>
+                    <li><a href="about.html">О САЛОНЕ</a></li>
+                    <li><a href="uslugi.html">УСЛУГИ</a></li>
+                    <li><a href="ceni.html">ЦЕНЫ</a></li>
+                    <li><a href="contact.html">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1> Наши услуги </h1>
+
+    </section>
+
+<!-------uslugi------->
+
+<section class="uslugi">
+    <h1>Наши услуги</h1>
+    <p>Здесь вы можете увидеть все, что мы предлагаем в нашем тату-салоне.</p>
+
+    <div class="row">
+        <div class="uslugi-col">
+            <h3>Исправление некачественных татуировок.</h3>
+            <p>Исправление плохих татуировок, воссоздавая их с мастерством и вниманием к деталям, чтобы достичь идеального результата и вернуть вам уверенность в вашем внешнем виде.</p>
+        </div>
+        <div class="uslugi-col">
+            <h3>Стили</h3>
+            <p>Мы предлагаем широкий выбор стилей, включая реализм, красочные татуировки и множество других.</p>
+        </div>
+        <div class="uslugi-col">
+            <h3>Создание эскизов</h3>
+            <p>Наша тату-студия специализируется на создании оригинальных эскизов, полных творчества и индивидуальности.</p>
+        </div>
+    </div>
+
+</section>
+
+<!------stili------->
+
+<section class="stili">
+    <h1>Стили</h1>
+    <p>Мы хороши во всех стилях.</p>
+
+    <div class="row">
+        <div class="stili-col">
+            <img src="images/bnw.jpg">
+            <div class="layer">
+                <h3>Черно-белые</h3>
+            </div>
+        </div>
+        <div class="stili-col">
+            <img src="images/colorful.jpg">
+            <div class="layer">
+                <h3>В цвете</h3>
+            </div>
+        </div>
+            <div class="stili-col">
+                <img src="images/real.png">
+                <div class="layer">
+                    <h3>Реалистичные</h3>
+                </div>
+        </div>
+    </div>
+ </section>
+ 
+
+
+<!----------Footer------------>
+
+<section class="footer">
+    <h4>О нас</h4>
+    <p>В нашем тату-салоне мы специализируемся на создании индивидуальных изображений, отражающих ваш уникальный стиль.<br> Благодаря опытным художникам и приверженности качеству мы стремимся доставить исключительные впечатления от татуировки.<br> От смелых и дерзких дизайнов до тонких и минималистичных произведений искусства — мы стремимся воплотить ваши идеи в жизнь.<br> Доверьте нам сделать вашу татуировку реальностью. Откройте для себя мастерство нашей студии сегодня.</p>
+</section>
+
+    <!------JS for toggle Menu----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

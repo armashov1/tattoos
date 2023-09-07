@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Armashov Tattoo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img class="logo" src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ДОМ</a></li>
+                    <li><a href="about.html">О САЛОНЕ</a></li>
+                    <li><a href="uslugi.html">УСЛУГИ</a></li>
+                    <li><a href="ceni.html">ЦЕНЫ</a></li>
+                    <li><a href="contact.html">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1> О САЛОНЕ </h1>
+
+    </section>
+
+   <!---------about us content--------->
+
+<section class="about-us">
+
+    <div class="row">
+        <div class="about-col">
+            <h1>Мы лучшие на территории</h1>
+            <p>В нашей студии гигиена является главным приоритетом. Мы поддерживаем самые высокие стандарты чистоты и стерилизации, чтобы обеспечить безопасную и комфортную среду для каждого клиента. Наше современное оборудование и лучшие в отрасли методы гарантируют, что вы можете доверить нам свою кожу. У наших мастеров есть обширное портфолио, которое демонстрирует их универсальность и способность воплотить в жизнь любую идею. Каждая татуировка выполнена с точностью и изяществом, в результате чего получаются потрясающие произведения искусства, выдерживающие испытание временем. Мы понимаем, что татуировка — это личное выражение вашей индивидуальности. Вот почему наша студия сосредоточена на том, чтобы выслушать ваши идеи и воплотить их в потрясающие чернила на вашей коже. Мы отдаем приоритет четкому общению, чтобы вы чувствовали себя услышанными и понятыми на протяжении всего процесса.
+                Если вы ищете тату-студию, которая воплощает крутость, профессионализм и непревзойденное мастерство, не ищите дальше. Мы являемся местом назначения для тех, кто требует самого лучшего. Посетите нашу студию и ощутите разницу на себе. Ваше путешествие к исключительной татуировке начинается здесь.</p>
+                <a href="" class="hero-btn green-btn">ЗАКАЗАТЬ ТАТУИРОВКУ</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.jpg">
+        </div>
+    </div>
+
+</section>
+
+
+<!----------Footer------------>
+
+<section class="footer">
+    <h4>О нас</h4>
+    <p>В нашем тату-салоне мы специализируемся на создании индивидуальных изображений, отражающих ваш уникальный стиль.<br> Благодаря опытным художникам и приверженности качеству мы стремимся доставить исключительные впечатления от татуировки.<br> От смелых и дерзких дизайнов до тонких и минималистичных произведений искусства — мы стремимся воплотить ваши идеи в жизнь.<br> Доверьте нам сделать вашу татуировку реальностью. Откройте для себя мастерство нашей студии сегодня.</p>
+</section>
+
+    <!------JS for toggle Menu----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

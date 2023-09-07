@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Armashov Tattoo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img class="logo" src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ДОМ</a></li>
+                    <li><a href="about.html">О САЛОНЕ</a></li>
+                    <li><a href="uslugi.html">УСЛУГИ</a></li>
+                    <li><a href="ceni.html">ЦЕНЫ</a></li>
+                    <li><a href="contact.html">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1> Связаться с нами </h1>
+
+    </section>
+
+   <!---------contact us--------->
+
+   <section class="location">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d345.79113905609785!2d38.65793394022219!3d55.78081917785837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ae06275a970ef%3A0xdc6660e1d8b2629d!2z0YPQuy4g0JvQtdC90LjQvdCwLCAzMywg0J_QsNCy0LvQvtCy0YHQutC40Lkg0J_QvtGB0LDQtCwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGPLCAxNDI1MDA!5e0!3m2!1sru!2sam!4v1689413720660!5m2!1sru!2sam" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+   </section>
+
+   <section class="contact-us">
+    <div class="row">
+    <div class="contact-col">
+        <div>
+            <i class="fa fa-home"></i>
+            <span>
+                <h5>Город Павловский посад</h5>
+                <p>ул. Ленина 33</p>
+            </span>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <span>
+                <h5>+79888356204</h5>
+                <p>Понедельник - Пятница, 9:00 - 23:00</p>
+            </span>
+        </div>
+        <div>
+            <i class="fa fa-envelope-open"></i>
+            <span>
+                <h5>armashovt@gmail.com</h5>
+                <p>Пишите нам в любое время</p>
+            </span>
+        </div>
+        <div>
+            <i class="fa-brands fa-instagram"></i>
+            <span>
+                <h5>armashov_tattoo_vld</h5>
+                <p>Наш инстаграм</p>
+            </span>
+        </div>
+        <div>
+            <i class="fa-brands fa-vk"></i>
+            <span>
+                <h5>Арман Армашов-Тату</h5>
+                <p>Мы в ВК</p>
+            </span>
+        </div>
+    </div>
+
+<div class="contact-col">
+
+    <form action="https://formspree.io/f/mgejvweg" method="POST">
+        <input type="text" name="name" placeholder="Введите ваше имя" required>
+        <input type="email" name="email" placeholder="Введите ваш адрес электронной почты" required>
+        <input type="text" name="subject" placeholder="Введите тему" required>
+        <textarea rows="8" name="message" placeholder="Сообщение" required></textarea>
+        <button type="submit" class="hero-btn green-btn">Отправить сообщение</button>
+    </form>
+</div>
+    </div>
+
+
+   </section>
+
+
+<!----------Footer------------>
+
+<section class="footer">
+    <h4>О нас</h4>
+    <p>В нашем тату-салоне мы специализируемся на создании индивидуальных изображений, отражающих ваш уникальный стиль.<br> Благодаря опытным художникам и приверженности качеству мы стремимся доставить исключительные впечатления от татуировки.<br> От смелых и дерзких дизайнов до тонких и минималистичных произведений искусства — мы стремимся воплотить ваши идеи в жизнь.<br> Доверьте нам сделать вашу татуировку реальностью. Откройте для себя мастерство нашей студии сегодня.</p>
+</section>
+
+    <!------JS for toggle Menu----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
